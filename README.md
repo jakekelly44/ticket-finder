@@ -1,10 +1,10 @@
-# Recipe App (Name TBD)
+# Web Application (Name TBD)
 
 ## Live URL
-https://jakekelly44.github.io/recipe-app/
+https://uabc-project-1.github.io/uabc-project1/
 
 ## Description
-This is a Ingredient/Recipe web application developed for the University of Arizona Coding Bootcamp Group Project -- Weeks 7 & 8. 
+This is a Web application developed for the University of Arizona Coding Bootcamp Group Project -- Weeks 7 & 8. 
 
 The user story is as follows;     
 AS A        
