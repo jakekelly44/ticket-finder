@@ -7,9 +7,9 @@ https://uabc-project-1.github.io/uabc-project1/
 This is a Web application developed for the University of Arizona Coding Bootcamp Group Project -- Weeks 7 & 8. 
 
 The user story is as follows;     
-AS A        
-I WANT to    
-SO THAT I can      
+AS A civilian
+I WANT to be able to search events in any area 
+SO THAT I can buy tickets and attend those events   
 
 ## Functionality 
 The functionality is as follows;   
