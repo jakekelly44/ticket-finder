@@ -1,4 +1,4 @@
-# Web Application (Name TBD)
+# Web Application Ticket Discovery
 
 ## Live URL
 https://uabc-project-1.github.io/uabc-project1/

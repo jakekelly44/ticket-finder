@@ -1,10 +1,10 @@
-GIVEN 
-WHEN
-GIVEN 
-WHEN
-GIVEN 
-WHEN
-GIVEN 
-WHEN
-GIVEN 
-WHEN
+GIVEN an ticket dashboard with a search bar
+
+WHEN I search for a city
+THEN I am given current events in that location 
+
+WHEN I view current events in the specified location
+THEN I am presented with the event name, time, venue, and link to purchase a ticket
+
+WHEN I click on the event link
+THEN I am redirected to TicketMaster to purchase a ticket
