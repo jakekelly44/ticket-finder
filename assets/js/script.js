@@ -92,9 +92,11 @@ function getEvents() {
             var eventNameEl = $("<h2 class='event-title'>" + event.name + "</h2>");
             var eventDateEl = $("<div class='date-info'>" + date + " at: " + timeValue + "</div>");
             var venueNameEl = $("<div>" + "Venue: " + venue.name + "</div>");
+            var eventUrlEl = $("<a target='_blank' class='tixlink' id='tix' href=" + event.url + ">Buy Ticket</a>");
             column1.append(eventNameEl);
             column1.append(eventDateEl);
             column1.append(venueNameEl);
+            column1.append(eventUrlEl);
             eventCards.append(card);
 
         }
