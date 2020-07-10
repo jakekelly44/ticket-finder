@@ -32,3 +32,15 @@ Users can
 ![Proof of Recipe App #3 Still](./assets/doc/??? "Proof of Recipe App #3")
 
 
+
+
+## Update text - Micah
+
+## Add a local storage ( history ) - Jose
+
+## CSS and formating - Zac
+
+## Adding links to the different events - Jake
+
+## Fix google maps sizing- Carolina
+
