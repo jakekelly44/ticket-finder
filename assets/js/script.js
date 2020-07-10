@@ -6,7 +6,7 @@ var city = "";
 
 // FUNCTIONS // 
 
-function initializeMap(lat, lng, targetIndex) {
+function initMap(lat, lng, targetIndex) {
     var latlng = new google.maps.LatLng(lat, lng);
 
     var map = new google.maps.Map(document.getElementById(`map${targetIndex}`), {
@@ -35,7 +35,7 @@ function mapEmbed(index) {
         var longitude = venue.location.longitude;
         var lat = parseFloat(latitude);
         var lng = parseFloat(longitude);
-        initializeMap(lat, lng, index);
+        initMap(lat, lng, index);
     });
 }
 
@@ -92,7 +92,7 @@ function getEvents() {
             var eventNameEl = $("<h2 class='event-title'>" + event.name + "</h2>");
             var eventDateEl = $("<div class='date-info'>" + date + " at: " + timeValue + "</div>");
             var venueNameEl = $("<div>" + "Venue: " + venue.name + "</div>");
-            var eventUrlEl = $("<a target='_blank' class='tixlink' id='tix' href=" + event.url + ">Buy Ticket</a>");
+            var eventUrlEl = $("<a target='_blank' href=" + event.url + ">Buy Ticket</a>");
             column1.append(eventNameEl);
             column1.append(eventDateEl);
             column1.append(venueNameEl);
