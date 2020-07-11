@@ -47,19 +47,33 @@
 
 .map {
     width: 100%;
-    height: 100%;
+    height: 23vw;
     background-color: grey;
-    display: inline-flex;
+    display: inline-block;
 }
 
 .event-title {
-    font-size: 2vw;
     font-weight: bold;
+    text-align: center;
 }
 
 .date-info {
     font-size: 1.5vw;
     font-weight: bold;
+}
+
+.venue-info {
+    margin: 1vw;
+    font-size: 1.5vw;
+}
+
+.tickets {
+    font-size: 1.5vw;
+    margin: 1vw;
+}
+
+.tickets:hover {
+    text-decoration: underline;
 }
 
 .fa-search {

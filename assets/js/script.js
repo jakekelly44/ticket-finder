@@ -57,12 +57,12 @@ function getEvents() {
             var venue = response._embedded.events[i]._embedded.venues[0];
             var eventCards = $(".event-data");
             var card = $("<div class='event-card row'>");
-            var column1 = $("<div class='col s9'></div>");
-            var column2 = $("<div class='col s3'></div>");
+            var column1 = $("<div class='col s7 center vert'></div>");
+            var column2 = $("<div class='col s5 center'></div>");
             card.append(column1);
             card.append(column2);
             column2.append(
-                `<div id='map${i}' style='width: 260px; height: 270px'>`
+                `<div id='map${i}' class='map'>`
             );
 
             mapEmbed(i);
@@ -82,6 +82,7 @@ function getEvents() {
             }
 
             timeValue += (minutes < 10) ? ":0" + minutes : ":" + minutes;
+
             timeValue += (hours >= 12) ? " P.M." : " A.M.";
 
             var date = event.dates.start.localDate
@@ -91,8 +92,9 @@ function getEvents() {
 
             var eventNameEl = $("<h2 class='event-title'>" + event.name + "</h2>");
             var eventDateEl = $("<div class='date-info'>" + date + " at: " + timeValue + "</div>");
-            var venueNameEl = $("<div>" + "Venue: " + venue.name + "</div>");
-            var eventUrlEl = $("<a target='_blank' href=" + event.url + ">Buy Ticket</a>");
+            var venueNameEl = $("<div class='venue-info'>" + "Venue: " + venue.name + "</div>");
+            var eventUrlEl = $("<a class='tickets' target='_blank' href=" + event.url + ">Buy Ticket</a>");
+
             column1.append(eventNameEl);
             column1.append(eventDateEl);
             column1.append(venueNameEl);
