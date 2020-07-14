@@ -1,6 +1,7 @@
 //Declarations outside functions//
 var APIkey = "GBQWe9SfjWzXrEX2QYvxJV6VkkRFzJ9P";
 var city = "";
+var search = [];
 //END Declarations //
 
 
@@ -105,6 +106,29 @@ function getEvents() {
     });
 }
 
+function previousSearch() {
+    var location = document.getElementById("get-city").value;
+
+    var searchInfo = {
+        cities: location
+    };
+
+    search.push(searchInfo);
+
+    localStorage.setItem("search", JSON.stringify(search));
+
+    document.getElementById('search').textContent = "";
+
+    var oList = document.createElement("ol");
+    for (i = 0; i < search.length; i++) {
+        var list = document.createElement("li");
+        list.textContent = search[i].cities;
+        oList.appendChild(list);
+        document.getElementById('search').appendChild(oList);
+    };
+
+}
+
 
 // END FUNCTIONS // 
 
@@ -117,5 +141,6 @@ $(".btn").on("click", function() {
     var letsGo = caContent.val();
     city = letsGo;
     getEvents();
+    previousSearch();
     0
 });
