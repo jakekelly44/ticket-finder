@@ -52,6 +52,10 @@
     display: inline-block;
 }
 
+.search-title {
+    margin-bottom: 3vw;
+}
+
 .event-title {
     font-weight: bold;
     text-align: center;
@@ -78,4 +82,8 @@
 
 .fa-search {
     margin-top: 5px;
+}
+
+.page-footer {
+    margin-top: 5vw;
 }
