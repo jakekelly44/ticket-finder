@@ -106,28 +106,6 @@ function getEvents() {
     });
 }
 
-function previousSearch() {
-    var location = document.getElementById("get-city").value;
-
-    var searchInfo = {
-        cities: location
-    };
-
-    search.push(searchInfo);
-
-    localStorage.setItem("search", JSON.stringify(search));
-
-    document.getElementById('search').textContent = "";
-
-    var oList = document.createElement("ol");
-    for (i = 0; i < search.length; i++) {
-        var list = document.createElement("li");
-        list.textContent = search[i].cities;
-        oList.appendChild(list);
-        document.getElementById('search').appendChild(oList);
-    };
-
-}
 
 
 // END FUNCTIONS // 
