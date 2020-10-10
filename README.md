@@ -28,4 +28,4 @@ Users can view the event venue on the google maps embed
 Users can utilize native google maps embed functionaltyon each maps listing    
 Users can click on the logo in the google maps embed to travel to google maps    
 
-![Screenshot](doc/still.png?raw=true "Proof of Application")  
+![Screenshot](assets/documentation/still.png?raw=true "Proof of Application")  
